@@ -1,0 +1,25 @@
+@import "../src/styles/Header.scss";
+@import "../src/styles/Hero.scss";
+@import "../src/styles/Admin.scss";
+@import "../src/styles/Basket.scss";
+@import "../src/styles/ProductAll.scss";
+@import "../src/styles/ProductAdd.scss";
+@import "../src/styles/DetailsBook.scss";
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+ a {
+  text-decoration: none;
+ }
+ .container {
+  width: 80%;
+  margin: 0 auto;
+ }

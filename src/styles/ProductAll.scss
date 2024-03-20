@@ -1,0 +1,132 @@
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 4px;
+	background-color: #7c827e96;
+	line-height: 22px;
+    width: 400px;
+	height: 500px;
+
+	// padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Focus */
+.input-file input[type=file]:focus + span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover/active */
+.input-file:hover span {
+	background-color: #59be6e;
+}
+.input-file:active span {
+	background-color: #2E703A;
+}
+ 
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
+}
+
+
+#productall {
+    .productall {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 45px;
+        &--inputs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            &__name {
+                padding: 10px;
+                width: 350px;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid #010049;
+            font-size: 20px;
+            &::placeholder {
+                color: #010049;
+            }
+            }
+            &__flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 375px;
+                margin: 30px 0;
+             &--category {
+                padding: 10px;
+                width: 150px;
+                outline: none;
+                border-radius: 5px;
+                border: 2px solid #010049;
+                font-size: 20px;
+                &::placeholder {
+                    color: #010049;
+             }
+            }
+            &--price {
+                padding: 10px;
+                width: 150px;
+                outline: none;
+                border-radius: 5px;
+                border: 2px solid #010049;
+                font-size: 20px;
+                &::placeholder {
+                    color: #010049;
+            }
+        }
+       
+
+        }
+        textarea {
+            padding: 20px;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid #010049;
+            font-size: 20px;
+            &::placeholder {
+                color: #010049;
+        } 
+    }
+    button {
+        font-size: 15px ;
+        font-weight: 600;
+                color: #010049;
+                border-radius: 8px ;
+                border: 2px solid #010049;
+    background: none;
+    outline: none;
+    width: 380px;
+    height: 51px;
+    margin-top: 30px;
+    }
+    }
+}
+}
